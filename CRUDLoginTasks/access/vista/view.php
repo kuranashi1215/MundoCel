@@ -14,21 +14,21 @@
     rel="stylesheet">
 
     <!-- Css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="styles/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="styles/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="styles/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 
 <body>
     <!-- Cargador Pagina -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
+    <!-- <div id="preloder"> -->
+        <!-- <div class="loader"></div> -->
+    <!-- </div> -->
 
 
     <!-- Offcanvas Menu Comienza -->
@@ -37,7 +37,7 @@
         <div class="offcanvas__option">
             <div class="offcanvas__links">
                 <a href="login.html">Iniciar Sesion</a>
-                <a href="#">Registrarse</a>
+                <a href="../vista/formRegister.php">Registrarse</a>
             </div>
             <div class="offcanvas__top__hover">
                 <span>COL<i class="arrow_carrot-down"></i></span>
@@ -45,7 +45,7 @@
         </div>
         <div class="offcanvas__nav__option">
             <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-            <a href="#"><img src="img/icon/heart.png" alt=""></a>
+            <a href="#"><img src="../img/icon/heart.png" alt=""></a>
             <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
             <div class="price">$0.00</div>
         </div>
@@ -69,8 +69,8 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="login.html">Iniciar Sesion</a>
-                                <a href="#">Registrarse</a>
+                                <a href="../vista/formLogin.php">Iniciar Sesion</a>
+                                <a href="../vista/formRegister.php">Registrarse</a>
                             </div>
                             <div class="header__top__hover">
                                 <span>COL</i></span>
@@ -90,15 +90,15 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Inicio</a></li>
-                            <li><a href="#  ">Productos</a></li>
+                            <li class="active"><a href="">Inicio</a></li>
+                            <li><a href="#">Productos</a></li>
                             <li><a href="#">Paginas</a>
                                 <ul class="dropdown">
-                                    <li><a href="./about.html">Acerca de</a></li>
+                                    <li><a href="">Acerca de</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Categorias</a></li>
-                            <li><a href="contact.html">Contacto</a></li>
+                            <li><a href="#">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -116,45 +116,45 @@
     </header>
     <!-- Header termina-->
 
-           <!-- Hero Seccion Empieza -->
-           <section class="hero">
-            <div class="hero__slider owl-carousel">
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-5 col-lg-7 col-md-8">
-                                <div class="hero__text">
-                                    <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, aperiam!</h6>
-                                    <h2>Lorem ipsum dolor sit amet.</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis blanditiis cupiditate quibusdam eligendi, laborum aliquid totam. Tempore, maiores debitis!</p>
-                                    <a href="#" class="primary-btn">COMPRA AHORA</a>
-                                    <div class="hero__social">
-    
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero__items set-bg" data-setbg="img/hero/hero-2.jpg">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-5 col-lg-7 col-md-8">
-                                <div class="hero__text">
-                                    <h6>Lorem ipsum, dolor sit amet consectetur adipisicing.</h6>
-                                    <h2>Lorem ipsum dolor sit amet.</h2> 
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, necessitatibus ea ullam nobis mollitia laborum..</p>
-                                    <a href="#" class="primary-btn">COMPRA AHORA</a>
-                                    <div class="hero__social">
-                                    </div>
+    <!-- Hero Seccion Empieza -->
+      <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-7 col-md-8">
+                            <div class="hero__text">
+                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, aperiam!</h6>
+                                <h2>Lorem ipsum dolor sit amet.</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis blanditiis cupiditate quibusdam eligendi, laborum aliquid totam. Tempore, maiores debitis!</p>
+                                <a href="#" class="primary-btn">COMPRA AHORA</a>
+                                <div class="hero__social">
+
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Hero Section Termina -->
+            <div class="hero__items set-bg" data-setbg="img/hero/hero-2.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-7 col-md-8">
+                            <div class="hero__text">
+                                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing.</h6>
+                                <h2>Lorem ipsum dolor sit amet.</h2> 
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, necessitatibus ea ullam nobis mollitia laborum..</p>
+                                <a href="#" class="primary-btn">COMPRA AHORA</a>
+                                <div class="hero__social">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section Termina -->
 
         <!-- Categorias Comienza -->
         <section class="banner spad">
@@ -216,7 +216,9 @@
                         <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
                             <span class="label">New</span>
                             <ul class="product__hover">
-                                <li><a href="shop-details.html"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
