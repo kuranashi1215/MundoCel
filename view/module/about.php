@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Male_Fashion Template">
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MundoCel</title>
+    <title>Sobre Nosotros</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
     rel="stylesheet">
 
-    <!-- Css -->
+    <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
@@ -114,54 +113,169 @@
             <div class="canvas__open"><i class="fa fa-bars"></i></div>
         </div>
     </header>
+    <!-- Header termina-->
 
-    <!-- Map Begin -->
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125576.61026412691!2d-75.57856601708745!3d10.40019114877201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef625e7ae9d1351%3A0xb161392e033f26ca!2sCartagena%20de%20Indias%2C%20Provincia%20de%20Cartagena%2C%20Bol%C3%ADvar!5e0!3m2!1ses-419!2sco!4v1654523129222!5m2!1ses-419!2sco" height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-    <!-- Map End -->
 
-    <!-- Contact Section Begin -->
-    <section class="contact spad">
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact__text">
-                        <div class="section-title">
-                            <span>Informacion</span>
-                            <h2>Contactanos</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti veniam sequi quibusdam, modi distinctio velit culpa in ullam corporis adipisci, enim quas quos amet, quidem accusantium aut eaque. Quae, temporibus!</p>
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Sobre Nosotros</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Inicio</a>
+                            <span>Sobre Nosotros</span>
                         </div>
-                        <ul>
-                            <li>
-                                <h4>Cartagena</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sapiente assumenda earum fugit iste dicta distinctio et recusandae! Ratione, id officiis maxime accusantium eum maiores ipsa animi ad neque excepturi! <br />+57 3004824495</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <div class="contact__form">
-                        <form action="#">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <input type="text" placeholder="Nombre">
-                                </div>
-                                <div class="col-lg-6">
-                                    <input type="text" placeholder="Email">
-                                </div>
-                                <div class="col-lg-12">
-                                    <textarea placeholder="Mensaje"></textarea>
-                                    <button type="submit" class="site-btn">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Contact Section End -->
+    <!-- Breadcrumb Section End -->
+
+    <!-- About Section Begin -->
+    <section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about__pic">
+                        <img src="img/about/about-us.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="about__item">
+                        <h4>Quienes Somos?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit asperiores ullam aspernatur voluptas doloremque perferendis.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="about__item">
+                        <h4>Que hacemos?</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum nulla veritatis porro eligendi sapiente excepturi!</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="about__item">
+                        <h4>Porque Escogernos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nostrum adipisci fuga doloremque neque ducimus in mollitia cupiditate provident placeat?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 p-0">
+                    <div class="testimonial__text">
+                        <span class="icon_quotations"></span>
+                        <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero magni excepturi vel quo, officia sapiente obcaecati corrupti quasi numquam itaque impedit rerum nemo maxime minus, vitae nisi.”
+                        </p>
+                        <div class="testimonial__author">
+                            <div class="testimonial__author__text">
+                                <h5>Persona1</h5>
+                                <p>CargoPersona</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 p-0">
+                    <div class="testimonial__pic set-bg" data-setbg="img/about/testimonial-pic.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+    <section class="counter spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="cn_num">190</h2>
+                        </div>
+                        <span>Total de<br />Productos</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="cn_num">15</h2>
+                        </div>
+                        <span>Marcas <br />Distintas</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="cn_num">3</h2>
+                        </div>
+                        <span>Tiendas <br />En Cartagena</span>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <div class="counter__item__number">
+                            <h2 class="cn_num">98</h2>
+                            <strong>%</strong>
+                        </div>
+                        <span>Clientes <br />Felices</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Client Section Begin -->
+    <section class="clients spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Colaboraciones</span>
+                        <h2>Marcas que trabajamos</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-1.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-2.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-3.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-4.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-5.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-6.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-7.png" alt=""></a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+                    <a href="#" class="client__item"><img src="img/clients/client-8.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Client Section End -->
+
     <!-- COmienza Footer -->
     <footer class="footer">
         <div class="container">
@@ -226,6 +340,8 @@
         </div>
     </div>
     <!-- Busqueda termina -->
+
+
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
