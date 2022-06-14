@@ -1,5 +1,6 @@
 <?php
 session_start();
+require_once "view/template.php";
 class Template{
     public function getIntro(){
         
