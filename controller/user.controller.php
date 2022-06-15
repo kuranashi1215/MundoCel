@@ -1,7 +1,7 @@
 <?php
 class UserController{
     
-    public function getVerifyPass( $user, $pass){
+    public function getVerifyPass($user, $pass){
 
         try{
 

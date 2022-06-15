@@ -2,7 +2,6 @@
 
   include_once 'view/module/head.php';
   include_once 'view/module/header.php';
- // include_once 'view/module/menu.php';
 
   if (isset($_GET['ruta'])){ //Si variable ruta existe
     switch ($_GET['ruta']) {
