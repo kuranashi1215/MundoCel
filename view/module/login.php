@@ -13,16 +13,16 @@
 <div class="container">
 	<div class="screen">
 		<div class="screen__content">
-			<form class="login">
+			<form class="login" method="POST">
 				<div class="login__field">
 					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="Usuario">
+					<input type="text" class="login__input" placeholder="Usuario" name="txtUser">
 				</div>
 				<div class="login__field">
 					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Contraseña">
+					<input type="password" class="login__input" placeholder="Contraseña" name="pass">
 				</div>
-				<button class="button login__submit">
+				<button class="button login__submit" value="Log in">
 					<span class="button__text">Inicia Sesion</span>
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>				
@@ -31,6 +31,21 @@
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>				
 			</form>
+			<?php
+                if (isset($_POST['txtUser'])){
+
+                    $user = $_POST['txtUser'];
+                    $pass = $_POST['pass'];
+
+                    try {
+                        $objCtl = new UserController();
+                        $objCtl -> getVerifyPass($user,$pass);
+                    } catch (Exception $e) {                        
+
+                    }
+
+                }
+            ?>
 		</div>
 		<div class="screen__background">
 			<span class="screen__background__shape screen__background__shape4"></span>
