@@ -42,7 +42,7 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="view/module/login.php">Iniciar Sesion</a>
+                                <a href="logeo">Iniciar Sesion</a>
                                 <a href="view/module/register.php">Registrarse</a>
                             </div>
                             <div class="header__top__hover">
