@@ -43,7 +43,7 @@
                         <div class="header__top__right">
                             <div class="header__top__links">
                                 <a href="logeo">Iniciar Sesion</a>
-                                <a href="view/module/register.php">Registrarse</a>
+                                <a href="register">Registrarse</a>
                             </div>
                             <div class="header__top__hover">
                                 <span>COL</i></span>
@@ -65,13 +65,9 @@
                         <ul>
                             <li class="active"><a href="">Inicio</a></li>
                             <li><a href="#">Productos</a></li>
-                            <li><a href="#">Paginas</a>
-                                <ul class="dropdown">
-                                    <li><a href="">Acerca de</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="about">Acerca</a></li>
                             <li><a href="#">Categorias</a></li>
-                            <li><a href="#">Contacto</a></li>
+                            <li><a href="contact">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>

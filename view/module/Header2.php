@@ -56,15 +56,11 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="">Inicio</a></li>
+                        <li class="active"><a href="">Inicio</a></li>
                             <li><a href="#">Productos</a></li>
-                            <li><a href="#">Paginas</a>
-                                <ul class="dropdown">
-                                    <li><a href="">Acerca de</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="about">Acerca</a></li>
                             <li><a href="#">Categorias</a></li>
-                            <li><a href="#">Contacto</a></li>
+                            <li><a href="contact">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>

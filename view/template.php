@@ -7,22 +7,36 @@ if (isset($_GET['ruta'])){ //Si variable ruta existe
     case 'logeo':
       include_once 'view/module/redireccion.php';
       break;
+    case 'contact':
+      include_once 'view/module/contact.php';
+      break;
+    case 'register':
+      include_once 'view/module/register.php';
+      break;
   }
 }
 
 if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
+
+      //  require_once "view/module/loader.php";
         require_once "view/module/Header2.php";
-        require_once "view/template.php";
-        include_once "view/module/view.php";
-        include_once 'view/module/footer.php';
+        require_once "view/module/hero.php";
+        require_once "view/module/category.php";
+        require_once "view/module/products.php";
+        require_once "view/module/instagram.php";
       }
       else
       {
         include_once 'view/module/header.php';
-        include_once "view/module/view.php";
-        include_once 'view/module/footer.php';
+        require_once "view/module/hero.php";
+        require_once "view/module/category.php";
+        require_once "view/module/products.php";
+        require_once "view/module/instagram.php";
+
+
       }
   
+      include_once 'view/module/footer.php';
 
 
 
@@ -44,7 +58,7 @@ if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
   //       break;
   //   }
   // } else {
-  //   include_once 'view/module/view.php';
+  //   include_once 'view/module/body.php';
   // }
   // include_once 'view/module/footer.php';
 ?>

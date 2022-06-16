@@ -1,94 +1,3 @@
-<!DOCTYPE html>
-<html lang="zxx">
-
-
-<body>
-    <!-- Cargador Pagina -->
-    <!-- <div id="preloder"> -->
-        <!-- <div class="loader"></div> -->
-    <!-- </div> -->
-
-    <!-- Hero Seccion Empieza -->
-      <section class="hero">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__items set-bg" data-setbg="view/img/hero-1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-7 col-md-8">
-                            <div class="hero__text">
-                                <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, aperiam!</h6>
-                                <h2>Lorem ipsum dolor sit amet.</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veritatis blanditiis cupiditate quibusdam eligendi, laborum aliquid totam. Tempore, maiores debitis!</p>
-                                <a href="#" class="primary-btn">COMPRA AHORA</a>
-                                <div class="hero__social">
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__items set-bg" data-setbg="img/hero/hero-2.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-5 col-lg-7 col-md-8">
-                            <div class="hero__text">
-                                <h6>Lorem ipsum, dolor sit amet consectetur adipisicing.</h6>
-                                <h2>Lorem ipsum dolor sit amet.</h2> 
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, necessitatibus ea ullam nobis mollitia laborum..</p>
-                                <a href="#" class="primary-btn">COMPRA AHORA</a>
-                                <div class="hero__social">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Hero Section Termina -->
-
-        <!-- Categorias Comienza -->
-        <section class="banner spad">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7 offset-lg-4">
-                        <div class="banner__item">
-                            <div class="banner__item__pic">
-                                <img src="view/img/CelularCategoria.jpg" alt="">
-                            </div>
-                            <div class="banner__item__text">
-                                <h2>Celulares</h2>
-                                <a href="#">Comprar ahora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="banner__item banner__item--middle">
-                            <div class="banner__item__pic">
-                                <img src="view/img/CategoriaMultimedia.jpg" alt="">
-                            </div>
-                            <div class="banner__item__text">
-                                <h2>Multimedia</h2>
-                                <a href="#">Comprar ahora</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="banner__item banner__item--last">
-                            <div class="banner__item__pic">
-                                <img src="view/img/CategoriaAccesorios.jpg" alt="">
-                            </div>
-                            <div class="banner__item__text">
-                                <h2>Accesorios</h2>
-                                <a href="#">Comprar ahora</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Categorias Termina -->
 
     <!-- Seccion Productos comienza -->
     <section class="product spad">
@@ -105,12 +14,12 @@
             <div class="row product__filter">
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="view/img/product.jpg">
                             <span class="label">New</span>
                             <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src="view/img/heart.png" alt=""></a></li>
+                                <li><a href="#"><img src="view/img/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="view/img/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -140,11 +49,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="view/img/product.jpg">
                             <ul class="product__hover">
-                                <li><a href="shop-details.html"><img src="img/icon/heart.png" alt=""><span>Ver</span></a></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="shop-details.html"><img src="view/img/heart.png" alt=""><span>Ver</span></a></li>
+                                <li><a href="#"><img src="view/img/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="view/img/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -174,12 +83,12 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="view/img/product.jpg">
                             <span class="label">Sale</span>
                             <ul class="product__hover">
-                                <li><a href="shop-details.html"><img src="img/icon/heart.png" alt=""></a><span>Ver</span></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="shop-details.html"><img src="view/img/heart.png" alt=""></a><span>Ver</span></li>
+                                <li><a href="#"><img src="view/img/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="view/img/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -209,11 +118,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="view/img/product.jpg">
                             <ul class="product__hover">
-                                <li><a href="shop-details.html"><img src="img/icon/heart.png" alt=""></a><span>Ver</span></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="shop-details.html"><img src="view/img/heart.png" alt=""></a><span>Ver</span></li>
+                                <li><a href="#"><img src="view/img/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="view/img/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -243,11 +152,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="view/img/product.jpg">
                             <ul class="product__hover">
-                                <li><a href="shop-details.html"><img src="img/icon/heart.png" alt=""></a><span>Ver</span></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="shop-details.html"><img src="view/img/heart.png" alt=""></a><span>Ver</span></li>
+                                <li><a href="#"><img src="view/img/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><view/ src="view/img/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -277,12 +186,12 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="view/img/product.jpg">
                             <span class="label">Sale</span>
                             <ul class="product__hover">
-                                <li><a href="shop-details.html"><img src="img/icon/heart.png" alt=""></a><span>Ver</span></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="shop-details.html"><img src="view/img/heart.png" alt=""></a><span>Ver</span></li>
+                                <li><a href="#"><img src="view/img/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="view/img/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -312,11 +221,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="view/img/product.jpg">
                             <ul class="product__hover">
-                                <li><a href="shop-details.html"><img src="img/icon/heart.png" alt=""></a><span>Ver</span></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="shop-details.html"><img src="view/img/heart.png" alt=""></a><span>Ver</span></li>
+                                <li><a href="#"><img src="view/img/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="view/img/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -346,11 +255,11 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix hot-sales">
                     <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
+                        <div class="product__item__pic set-bg" data-setbg="view/img/product.jpg">
                             <ul class="product__hover">
-                                <li><a href="shop-details.html"><img src="img/icon/heart.png" alt=""></a><span>Ver</span></li>
-                                <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a></li>
-                                <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                <li><a href="shop-details.html"><img src="view/img/heart.png" alt=""></a><span>Ver</span></li>
+                                <li><a href="#"><img src="view/img/compare.png" alt=""> <span>Compare</span></a></li>
+                                <li><a href="#"><img src="view/img/search.png" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -382,34 +291,3 @@
         </div>
     </section>
     <!-- Termina Seccion Productos -->
-
-   
-
-    <!-- Seccion Instagram -->
-    <section class="instagram spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="instagram__pic">
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/ instagram-1.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-2.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-3.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-4.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-5.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="img/instagram/instagram-6.jpg"></div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="instagram__text">
-                        <h2>Instagram</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                        <a href="https://github.com/"><h3>#MundoCel</h3></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Instagram Termina -->
-
-</html>
