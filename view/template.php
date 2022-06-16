@@ -11,6 +11,7 @@ if (isset($_GET['ruta'])){ //Si variable ruta existe
 }
 
 if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
+        require_once "view/module/Header2.php";
         require_once "view/template.php";
         include_once "view/module/view.php";
         include_once 'view/module/footer.php';
@@ -25,8 +26,8 @@ if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
 
 
 
- // include_once 'view/module/head.php';
-  //include_once 'view/module/header.php';
+//  include_once 'view/module/head.php';
+//   include_once 'view/module/header.php';
 
 
 

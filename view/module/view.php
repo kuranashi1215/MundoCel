@@ -11,7 +11,7 @@
     <!-- Hero Seccion Empieza -->
       <section class="hero">
         <div class="hero__slider owl-carousel">
-            <div class="hero__items set-bg" data-setbg=".hero/hero-1.jpg">
+            <div class="hero__items set-bg" data-setbg="view/img/hero-1.jpg">
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-5 col-lg-7 col-md-8">
@@ -55,7 +55,7 @@
                     <div class="col-lg-7 offset-lg-4">
                         <div class="banner__item">
                             <div class="banner__item__pic">
-                                <img src="img/banner/CelularCategoria.jpg" alt="">
+                                <img src="view/img/CelularCategoria.jpg" alt="">
                             </div>
                             <div class="banner__item__text">
                                 <h2>Celulares</h2>
@@ -66,7 +66,7 @@
                     <div class="col-lg-5">
                         <div class="banner__item banner__item--middle">
                             <div class="banner__item__pic">
-                                <img src="img/banner/CategoriaMultimedia.jpg" alt="">
+                                <img src="view/img/CategoriaMultimedia.jpg" alt="">
                             </div>
                             <div class="banner__item__text">
                                 <h2>Multimedia</h2>
@@ -77,7 +77,7 @@
                     <div class="col-lg-7">
                         <div class="banner__item banner__item--last">
                             <div class="banner__item__pic">
-                                <img src="img/banner/CategoriaAccesorios.jpg" alt="">
+                                <img src="view/img/CategoriaAccesorios.jpg" alt="">
                             </div>
                             <div class="banner__item__text">
                                 <h2>Accesorios</h2>
