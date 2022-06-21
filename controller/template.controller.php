@@ -13,9 +13,12 @@ class Template{
             // unset($_SESSION['Var']);
         }else if(isset($_SESSION['register']) && $_SESSION["register"] == true){
             require_once "view/module/register.php";
+        }else if(isset($_SESSION['shopdetails']) && $_SESSION["shopdetails"] == true){
+            require_once "view/module/shop-details.php";
         }else{
             require_once "view/template.php";
         }
+           
 
     }
 

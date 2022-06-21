@@ -2,6 +2,7 @@
 <?php 
 
 // require 'model/conexion.php';
+require 'model/config.php';
 $db = new Conexion();
 $con = $db ->getConect();
 
@@ -38,35 +39,19 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <div class="product__item__pic set-bg" data-setbg="<?php echo $imagen;?>">
                                 <span class="label">New</span>
                                 <ul class="product__hover">
-                                    <li><a href="#"><img src="view/img/heart.png" alt=""></a></li>
+                                    <li><a href="shopdetails"><img src="view/img/heart.png" alt=""></a></li>
                                     <li><a href="#"><img src="view/img/compare.png" alt=""> <span>Compare</span></a></li>
                                     <li><a href="#"><img src="view/img/search.png" alt=""></a></li>
                                 </ul>
                             </div>
                             <div class="product__item__text">
                                 <h6><?php echo $row['descripcion'] ?></h6>
-                                <a href="#" class="add-cart">+ Add To Cart</a>
-                                <div class="rating">
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                    <i class="fa fa-star-o"></i>
-                                </div>
+                                <!-- <a href="shopdetails" class="add-cart">Detalles</a> -->
                                 <h5><?php echo number_format($row['precio'], 2, '.', ',');?></h5>
-                                <div class="product__color__select">
-                                    <label for="pc-1">
-                                        <input type="radio" id="pc-1">
-                                    </label>
-                                    <label class="active black" for="pc-2">
-                                        <input type="radio" id="pc-2">
-                                    </label>
-                                    <label class="grey" for="pc-3">
-                                        <input type="radio" id="pc-3">
-                                    </label>
+                                <div class="btn-group">
+                                    <a href="#" class="btn btn-primary">detalles</a>
                                 </div>
-                            </div>
-                            
+                            </div>   
                         </div>      
                     </div>
                 <?php }?>  
