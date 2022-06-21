@@ -11,7 +11,7 @@ if (isset($_GET['ruta'])){ //Si variable ruta existe
       include_once 'view/module/contact.php';
       break;
     case 'register':
-      include_once 'view/module/register.php';
+      include_once 'view/module/redireccionR.php';
       break;
   }
 }
