@@ -5,14 +5,14 @@
 
   if (isset($_GET['ruta'])){ //Si variable ruta existe
     switch ($_GET['ruta']) {
-      case 'usuario':
-        include_once 'view/module/user.php';
+      case 'login':
+        include_once 'module/login.php';
         break;
-      case 'erase':
-        include_once 'view/module/erase.php';
+      case 'register':
+        include_once 'module/register.php';
         break;
       default:
-        include_once 'view/module/presentation.php';
+        include_once 'module/presentation.php';
         break;
     }
   } else {
