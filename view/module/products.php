@@ -37,19 +37,14 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                                 }
                             ?>    
                             <div class="product__item__pic set-bg" data-setbg="<?php echo $imagen;?>">
-                                <span class="label">New</span>
-                                <ul class="product__hover">
-                                    <li><a href="shopdetails"><img src="view/img/heart.png" alt=""></a></li>
-                                    <li><a href="#"><img src="view/img/compare.png" alt=""> <span>Compare</span></a></li>
-                                    <li><a href="#"><img src="view/img/search.png" alt=""></a></li>
-                                </ul>
+                                <span class="label">New</span>  
                             </div>
+                            <a href="shopdetails?id=<?php echo $row['id']; ?>&token=<?php echo hash_hmac('sha1' , $row['id'], KEY_TOKEN); ?>" class="btn btn-primary">detalles</a>
                             <div class="product__item__text">
                                 <h6><?php echo $row['descripcion'] ?></h6>
                                 <!-- <a href="shopdetails" class="add-cart">Detalles</a> -->
                                 <h5><?php echo number_format($row['precio'], 2, '.', ',');?></h5>
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-primary">detalles</a>
                                 </div>
                             </div>   
                         </div>      
