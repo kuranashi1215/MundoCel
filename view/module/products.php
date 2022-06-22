@@ -39,7 +39,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <div class="product__item__pic set-bg" data-setbg="<?php echo $imagen;?>">
                                 <span class="label">New</span>  
                             </div>
-                            <a href="shopdetails?id=<?php echo $row['id']; ?>&token=<?php echo hash_hmac('sha1' , $row['id'], KEY_TOKEN); ?>" class="btn btn-primary">detalles</a>
+                            <a href="shop-details.php?id=<?php echo $row["id"]; ?>&token=<?php echo hash_hmac('sha1' , $row["id"], KEY_TOKEN); ?>" >detalles</a>
                             <div class="product__item__text">
                                 <h6><?php echo $row['descripcion'] ?></h6>
                                 <!-- <a href="shopdetails" class="add-cart">Detalles</a> -->
