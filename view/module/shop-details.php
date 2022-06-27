@@ -1,3 +1,61 @@
+<?php
+
+require 'model/config.php';
+$db = new Conexion();
+$con = $db ->getConect();
+
+$sql = $con->prepare("SELECT count(codigoproducto) FROM productos WHERE codigoproducto=? AND codigoproducto = codigoproducto");
+$sql->execute(["codigoproducto"]);
+if ($sql->fetchColumn() > 0) {
+    
+    $sql = $con->prepare("SELECT codigoproducto,  descripcion, precio, descuento FROM productos WHERE codigoproducto=? AND codigoproducto = codigoproducto LIMIT 1");
+    $sql->execute(["codigoproducto"]);
+    $row = $sql->fetch(PDO::FETCH_ASSOC);
+    $codigoproducto = $row['codigoproducto'];
+    $descripcion = $row['descripcion'];
+    $precio = $row['precio'];
+    $descuento = $row['descuento'];
+    $precio_desc = $precio - (($precio * $descuento) / 100);
+    $dir_images = 'images/productos/'.$id.'/';
+
+    $rutaimg = $dir_images . 'principal.jpg';
+
+    if (!file_exists($rutaimg)) {
+        $rutaimg = 'img/no.jpg';
+    }
+    $imagenes = array();
+    $dir = dir($dir_images);
+
+    while (($archivo = $dir->read()) != false) {
+        if($archivo != 'principal.jpg' && (strpos($archivo, 'jpg') || strpos($archivo, 'jpeg'))){
+            $imagenes[] =  $dir_images . $archivo;
+        }
+        $dir->close();
+    }
+ }
+$resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
+
+$id = isset($_GET['id']) ? $_GET['id'] : '';
+$token = isset($_GET['token']) ? $_GET['token'] : '';
+
+// if ($id == '' || $token == '' ){
+
+//     echo 'Error al procesar la peticion';
+        // exit;
+// } else {
+//     $token_tmp = hash_hmac('sha1', $id, KEY_TOKEN);
+
+//     if ($token == $token_tmp) {
+//     } else {
+//         echo 'Error al procesar la peticion';
+//         exit;
+//     }
+// }
+      
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -116,6 +174,72 @@
 
     <!-- Header Section End -->
 
+    <!-- contenido -->
+    <main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 order-md-1">
+
+
+            <div id="carouselimages" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselimages" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselimages" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselimages" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="<?php echo $rutaimg;  ?>" class="d-block w-100">
+                </div>
+                <?php foreach ($imagenes as $img) { ?>
+                <div class="carousel-item ">
+                    <img src="<?php echo $img;  ?>" class="d-block w-100">
+                </div>
+                <?php } ?>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselimages" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+
+            
+            </div>
+            <div class="col-md-6 order-md-2">
+                <h2><?php echo $codigoproducto; ?></h2>
+
+                <?php if ($descuento > 0 ) { ?>
+                
+                <p><del><?php echo MONEDA . number_format($precio, 2, '.', ','); ?></del></p>
+                <h2><?php echo MONEDA . number_format($precio_tmp, 2, '.', ','); ?>
+                <small class="text-success"><?php echo $descuento; ?>% descuento </small>
+                </h2>
+
+                <?php } else { ?>
+                
+
+                <h2><?php echo MONEDA . number_format($precio, 2, '.', ','); ?></h2>
+
+                <?php  } ?>
+                <p class="lead">
+                    <?php echo $descripcion ?>
+                </p>
+                <div class="d-grid gap-3 col-10 mx-auto">
+                    <button class="btn btn-primary" type="button">Comprar ahora</button>
+                    <button class="btn btn-outline-primary" type="button">Agregar al Carrito</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+
+
+    <!-- fin Contenido -->
 
  
     <!-- Footer Section Begin -->

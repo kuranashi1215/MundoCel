@@ -1,7 +1,6 @@
 <?php
+$_SESSION["shopdetails"] = true;
 
-// $_SESSION["shopdetails"] = true;
-
-// header("location:index.php");
+header('location:index.php');
 
 ?>
