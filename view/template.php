@@ -8,13 +8,15 @@ if (isset($_GET['ruta'])){ //Si variable ruta existe
       include_once 'view/module/redireccion.php';
       break;
     case 'contact':
-      include_once 'view/module/contact.php';
+      include_once 'view/module/redireccionContact.php';
       break;
     case 'register':
       include_once 'view/module/redireccionR.php';
       break;
     case 'shopdetails':
-      include_once 'view/module/redireccionShop.php';  
+      include_once 'view/module/redireccionShop.php';
+    case 'cerrar':
+      include_once 'view/module/redireccionCerrar.php';    
   }
 }
 

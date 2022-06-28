@@ -36,7 +36,7 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="view/module/register.php">Cerrar Sesion</a>
+                                <a href="cerrar">Cerrar Sesion</a>
                             </div>
                             <div class="header__top__hover">
                                 <span>COL</i></span>
