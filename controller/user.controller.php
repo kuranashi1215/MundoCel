@@ -32,11 +32,9 @@ class UserController{
             echo "Error on the creation of the controller";
         }
     }
-    public function setInsertUser($name, $lastName, $user, $pass){
+    public function setInsertUser($user, $pass){
         try{
             $objDtoUser = new User();
-            $objDtoUser -> setName($name);
-            $objDtoUser -> setLastName($lastName);
             $objDtoUser -> setUser($user);
             $objDtoUser -> setPassword($pass);
 
@@ -69,29 +67,6 @@ class UserController{
         }
         return $respon;
     }//FIN DE MOSTRAR TODOS
-    public function setUpdateUser($code, $name, $lastName, $user, $pass){
-        try{
-            $objDtoUser = new User();
-            $objDtoUser -> setCode($code);
-            $objDtoUser -> setName($name);
-            $objDtoUser -> setLastName($lastName);
-            $objDtoUser -> setUser($user);
-            $objDtoUser -> setPassword($pass);
-            $objDaoUser = new UserModel($objDtoUser);
-            if ($objDaoUser -> mldUpdateUsuario()){
-                echo "<script>
-                Swal.fire(
-                    'Actualizado!',
-                    'El registro ha sido actualizado',
-                    'success'
-                )
-            </script>";
-            }
-        } catch(PDOException $e){
-            echo 'Error al modificara'.$e->getMessage();
-        }
-  
-    }//END UPDATE
 
 }// END CLASS
 

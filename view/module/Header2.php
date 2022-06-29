@@ -1,16 +1,10 @@
-    <!-- Cargador Pagina -->
-    <!-- <div id="preloder"> -->
-        <!-- <div class="loader"></div> -->
-    <!-- </div> -->
-
 
     <!-- Offcanvas Menu Comienza -->
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
             <div class="offcanvas__links">
-                <a href="view/module/login.php">Iniciar Sesion</a>
-                <a href="view/module/register.php">Registrarse</a>
+                <a href="view/module/register.php">Cerrar Sesion</a>
             </div>
             <div class="offcanvas__top__hover">
                 <span>COL<i class="arrow_carrot-down"></i></span>
@@ -42,12 +36,7 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-<<<<<<< HEAD
-                                <a href="login">Iniciar Sesion</a>
-=======
-                                <a href="logeo">Iniciar Sesion</a>
->>>>>>> kura
-                                <a href="register">Registrarse</a>
+                                <a href="view/module/register.php">Cerrar Sesion</a>
                             </div>
                             <div class="header__top__hover">
                                 <span>COL</i></span>
@@ -67,7 +56,7 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="">Inicio</a></li>
+                        <li class="active"><a href="">Inicio</a></li>
                             <li><a href="#">Productos</a></li>
                             <li><a href="about">Acerca</a></li>
                             <li><a href="#">Categorias</a></li>

@@ -1,3 +1,11 @@
 Options All -Indexes
+<<<<<<< HEAD
 RewriteEngine On
+=======
+
+
+RewriteEngine On
+
+
+>>>>>>> kura
 RewriteRule ^([-a-zA-Z0-9/]+)$ index.php?ruta=$1

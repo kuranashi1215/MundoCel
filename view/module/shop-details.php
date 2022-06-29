@@ -13,21 +13,21 @@
     rel="stylesheet">
 
     <!-- Css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="view/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="view/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="view/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="view/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="view/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="view/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="view/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="view/css/style.css" type="text/css">
 </head>
 
 <body>
     <!-- Cargador Pagina -->
-    <div id="preloder">
+    <!-- <div id="preloder">
         <div class="loader"></div>
-    </div>
+    </div> -->
 
 
     <!-- Offcanvas Menu Comienza -->
@@ -116,250 +116,10 @@
 
     <!-- Header Section End -->
 
-    <!-- Shop Details Section Begin -->
-    <section class="shop-details">
-        <div class="product__details__pic">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="product__details__breadcrumb">
-                            <a href="./index.html">Inicio</a>
-                            <a href="./shop.html">Productos</a>
-                            <span>Detalles Producto</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-3">
-                        <ul class="nav nav-tabs" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img/shop-details/product.jpg">
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img/shop-details/product.jpg">
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img/shop-details/product.jpg">
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img/shop-details/product.jpg">
-                                        <i class="fa fa-play"></i>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-6 col-md-9">
-                        <div class="tab-content">
-                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                <div class="product__details__pic__item">
-                                    <img src="img/shop-details/product.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                <div class="product__details__pic__item">
-                                    <img src="img/shop-details/product.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-3" role="tabpanel">
-                                <div class="product__details__pic__item">
-                                    <img src="img/shop-details/product.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="tab-pane" id="tabs-4" role="tabpanel">
-                                <div class="product__details__pic__item">
-                                    <img src="img/shop-details/product.jpg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="product__details__content">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="product__details__text">
-                            <h4>Motorola One Action</h4>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                                <span> - 5 estrellas</span>
-                            </div>
-                            <h3>$500.000 <span>650.000</span></h3>
-                            <p>El Motorola One Action cuenta con una pantalla Full HD+ de 6.3 pulgadas con relación de aspecto 21:9 y está potenciado por un procesador Exynos 9609 de ocho núcleos, acompañado de 4GB de memoria RAM y con 128GB de espacio de almacenamiento expandible.</p>
-                            <div class="product__details__option">
-                            </div>
-                            <div class="product__details__cart__option">
-                                <div class="quantity">
-                                    <div class="pro-qty">
-                                        <input type="text" value="1">
-                                    </div>
-                                </div>
-                                <a href="#" class="primary-btn">Añadir al carrito</a>
-                            </div>
-                            <div class="product__details__btns__option">
-                            </div>
-                            <div class="product__details__last__option">
-                                <h5><span>Guaranteed Safe Checkout</span></h5>
-                                <img src="img/shop-details/details-payment.png" alt="">
-                                <ul>
-                                    <li><span>Categories:</span> Celulares</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="product__details__tab">
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#tabs-5"
-                                    role="tab">Description</a>
-                                </li>
 
-                            </ul>
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="tabs-5" role="tabpanel">
-                                    <div class="product__details__tab__content">
-
-                                        <div class="product__details__tab__content__item">
-                                            <center><h5>Camara</h5></center>
-                                            <p>La cámara principal del Motorola One Action consta de tres sensores de 12 MP + 16 MP + 5 MP cubriendo funciones como gran angular y efectos de profundidad, mientras que su cámara para selfies es de 12 MP de gran angular.</p>
-                                        </div>
-                                        <div class="product__details__tab__content__item">
-                                            <center><h5>Bateria</h5></center>
-                                            <p>El Motorola One Action completa sus características con una batería de 3500 mAh con soporte de carga rápida, lector de huellas, sonido Dolby y corre Android 9.0 Pie bajo el programa Android One de actualizaciones garantizadas.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Shop Details Section End -->
-
-    <!-- Related Section Begin -->
-    <section class="related spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h3 class="related-title">Productos Relacionados</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
-                            <span class="label">New</span>
-                            <ul class="product__hover">
-                                <li><a href="motorolaone.html"><img src="img/icon/search.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Motorola One</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>$67.24</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
-                            <ul class="product__hover">
-                                <li><a href="motorolaonevision.html"><img src="img/icon/search.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Motorola One Vision</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>$67.24</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
-                    <div class="product__item sale">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
-                            <span class="label">Sale</span>
-                            <ul class="product__hover">
-                                <li><a href="motorolaoneplus.html"><img src="img/icon/search.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Motorola One Plus</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>$43.48</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-sm-6">
-                    <div class="product__item">
-                        <div class="product__item__pic set-bg" data-setbg="img/product/product.jpg">
-                            <ul class="product__hover">
-                                <li><a href="motorolag6plus.html"><img src="img/icon/search.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="product__item__text">
-                            <h6>Motorola G6 Plus</h6>
-                            <a href="#" class="add-cart">+ Add To Cart</a>
-                            <div class="rating">
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-                            <h5>$60.9</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Related Section End -->
-
+ 
     <!-- Footer Section Begin -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
@@ -409,18 +169,18 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- Footer Section End -->
 
     <!-- Search Begin -->
-    <div class="search-model">
+    <!-- <div class="search-model">
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="search-close-switch">+</div>
             <form class="search-model-form">
                 <input type="text" id="search-input" placeholder="Search here.....">
             </form>
         </div>
-    </div>
+    </div> -->
     <!-- Search End -->
 
     <!-- Js Plugins -->
