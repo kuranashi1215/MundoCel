@@ -6,7 +6,7 @@ require 'model/config.php';
 $db = new Conexion();
 $con = $db ->getConect();
 
-$sql = $con->prepare("SELECT codigoproducto,  descripcion, precio FROM productos WHERE codigoproducto = codigoproducto");
+$sql = $con->prepare("SELECT id, nombre,  descripcion, precio FROM productos WHERE id = id");
 $sql->execute();
 $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
@@ -29,7 +29,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                     <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
                         <div class="product__item">
                             <?php
-                                $id = $row['codigoproducto'];
+                                $id = $row['id'];
                                 $imagen = "view/img/productos/".$id."/product.jpg";
 
                                 if (!file_exists($imagen)) {
@@ -39,7 +39,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <div class="product__item__pic set-bg" data-setbg="<?php echo $imagen;?>">
                                 <span class="label">New</span>  
                             </div>
-                            <a href="shopdetails?id=<?php echo $row["codigoproducto"]; ?>&token=<?php echo hash_hmac('sha1' , $row["codigoproducto"], KEY_TOKEN); ?>" >detalles</a>
+                            <a href="shopdetails?id=<?php echo $row["id"]; ?>&token=<?php echo hash_hmac('sha1' , $row["id"], KEY_TOKEN); ?>" >detalles</a>
                             <div class="product__item__text">
                                 <h6><?php echo $row['descripcion'] ?></h6>
                                 <!-- <a href="shopdetails" class="add-cart">Detalles</a> -->

@@ -1,9 +1,4 @@
 
-<body>
-    <!-- Cargador Pagina -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
 
 
     <!-- Map Begin -->

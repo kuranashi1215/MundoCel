@@ -13,12 +13,12 @@ class Template{
             // unset($_SESSION['Var']);
         }else if(isset($_SESSION['register']) && $_SESSION["register"] == true){
             require_once "view/module/register.php";
-        }else if(isset($_SESSION['shopdetails']) && $_SESSION["shopdetails"] == true){
-            require_once "view/module/shop-details.php";
-        }else if(isset($_SESSION['contact']) && $_SESSION["contact"] == true){
-            require_once "view/module/contact.php";    
-        }else if(isset($_SESSION['cerrar']) && $_SESSION["cerrar"] == true){
-            require_once "view/template.php";
+        // }else if(isset($_SESSION['shopdetails']) && $_SESSION["shopdetails"] == true){
+        //     require_once "view/module/shop-details.php";
+        // }else if(isset($_SESSION['contact']) && $_SESSION["contact"] == true){
+        //     require_once "view/module/contact.php";    
+        // }else if(isset($_SESSION['about']) && $_SESSION["about"] == true){
+        //     require_once "view/module/about.php";
         }else{
             require_once "view/template.php";
         }
