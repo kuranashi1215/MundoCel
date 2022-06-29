@@ -5,12 +5,22 @@
 
 
     <!-- Offcanvas Menu Comienza -->
+
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
             <div class="offcanvas__links">
                 <a href="view/module/login.php">Iniciar Sesion</a>
-                <a href="view/module/register.php">Registrarse</a>
+                <?php
+                if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
+                    echo "<a href='view/module/CerrarSesion.php'>Cerrar Sesion</a>";               
+                    }else{
+                    // header_remove();
+                    echo "<a href='logeo'>Iniciar Sesion</a>";
+                    echo "<a href='register'>Register</a>";
+                    }
+                    
+                ?>
             </div>
             <div class="offcanvas__top__hover">
                 <span>COL<i class="arrow_carrot-down"></i></span>
@@ -27,6 +37,7 @@
             <p>Free shipping, 30-day return or refund guarantee.</p>
         </div>
     </div>
+  
     <!-- Offcanvas Menu termina -->
 
     <!-- Header Comienza -->
@@ -42,12 +53,28 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-<<<<<<< HEAD
-                                <a href="login">Iniciar Sesion</a>
-=======
-                                <a href="logeo">Iniciar Sesion</a>
->>>>>>> kura
-                                <a href="register">Registrarse</a>
+                               
+
+                                
+        
+                            <?php
+                               if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
+                                echo " <form method='POST'>
+                                <input type='hidden' name='txtSalir'>
+                                <button type='submit'>Cerrar Sesion</button>
+                                </form>";                    
+                                }else{
+                                    // header_remove();
+                                    echo "<a href='logeo'>Iniciar Sesion</a>";
+                                    echo "<a href='register'>Register</a>";
+                                }
+                                if (isset($_POST['txtSalir'])){
+                                    $_SESSION['login'] = false;
+                                    unset($_SESSION['login']);
+                                    header('location: index.php');
+                                  }
+
+                            ?>
                             </div>
                             <div class="header__top__hover">
                                 <span>COL</i></span>
@@ -71,7 +98,7 @@
                             <li><a href="#">Productos</a></li>
                             <li><a href="about">Acerca</a></li>
                             <li><a href="#">Categorias</a></li>
-                            <li><a href="contact">Contacto</a></li>
+                            <li><a href="index.php?ruta=contact">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>
