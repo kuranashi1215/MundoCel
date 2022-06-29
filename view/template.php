@@ -2,22 +2,7 @@
 
 include_once 'view/module/head.php';
 
-<<<<<<< HEAD
-  if (isset($_GET['ruta'])){ //Si variable ruta existe
-    switch ($_GET['ruta']) {
-      case 'login':
-        include_once 'module/login.php';
-        break;
-      case 'register':
-        include_once 'module/register.php';
-        break;
-      default:
-        include_once 'module/presentation.php';
-        break;
-    }
-  } else {
-    include_once 'view/module/view.php';
-=======
+
 if (isset($_GET['ruta'])){ //Si variable ruta existe
   switch ($_GET['ruta']) {
     case 'logeo':
@@ -31,7 +16,7 @@ if (isset($_GET['ruta'])){ //Si variable ruta existe
       break;
     case 'shopdetails':
       include_once 'view/module/redireccionShop.php';  
->>>>>>> kura
+
   }
 }
 
