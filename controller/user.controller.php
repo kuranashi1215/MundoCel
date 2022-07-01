@@ -12,17 +12,7 @@ class UserController{
             $objDaoUser = new UserModel($objDtoUser);
 
             if (gettype($objDaoUser -> getQueryLogin() -> fetch()) == 'boolean'){
-
-                echo "
-                <script>
-                Swal.fire({
-                    icon: 'error',
-                    title: 'Oops...',
-                    text: 'Password error!'
-                  })
-                </script>                
-                ";
-
+                
             }else{
                 $_SESSION['login'] = true;
                 header('location: index.php');
@@ -41,13 +31,7 @@ class UserController{
             $objDaoUser = new UserModel($objDtoUser);
 
             if ($objDaoUser -> mldInsertUsuario()){
-                echo "<script>
-                Swal.fire(
-                    'Guardado',
-                    'Registro insertado',
-                    'success'
-                  )
-                </script>";
+                echo "se ha insertado";
             }
 
         } catch(Exception $e){

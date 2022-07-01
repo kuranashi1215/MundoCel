@@ -1,12 +1,14 @@
 
 <?php 
 
-// require 'model/conexion.php';
+//require 'model/conexion.php';
 require 'model/config.php';
-$db = new Conexion();
-$con = $db ->getConect();
+$db = new Database();
+$con = $db ->conectar();
 
-$sql = $con->prepare("SELECT id, nombre,  descripcion, precio FROM productos WHERE id = id");
+
+
+$sql = $con->prepare("SELECT id,nombre, precio, descripcion  FROM productoS WHERE activo=1");
 $sql->execute();
 $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 
@@ -39,7 +41,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <div class="product__item__pic set-bg" data-setbg="<?php echo $imagen;?>">
                                 <span class="label">New</span>  
                             </div>
-                            <a href="shopdetails?id=<?php echo $row["id"]; ?>&token=<?php echo hash_hmac('sha1' , $row["id"], KEY_TOKEN); ?>" >detalles</a>
+                            <a href="view/module/shopdetails.php?id=<?php echo $row['id']; ?>&token=<?php echo hash_hmac('sha1',$row['id'], KEY_TOKEN); ?>">detalles</a>
                             <div class="product__item__text">
                                 <h6><?php echo $row['descripcion'] ?></h6>
                                 <!-- <a href="shopdetails" class="add-cart">Detalles</a> -->

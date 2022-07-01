@@ -83,11 +83,11 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="">Inicio</a></li>
-                            <li><a href="#">Productos</a></li>
+                            <li class="active"><a href="inicio">Inicio</a></li>
+                            <li><a href="index.php?ruta=products">Productos</a></li>
                             <li><a href="about">Acerca</a></li>
                             <li><a href="#">Categorias</a></li>
-                            <li><a href="index.php?ruta=contact">Contacto</a></li>
+                            <li><a href="contact">Contacto</a></li>
                         </ul>
                     </nav>
                 </div>
