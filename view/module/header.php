@@ -7,7 +7,7 @@
     <!-- Offcanvas Menu Comienza -->
     <?php
     require 'controller/carrito.controller.php';
-    require 'clases/carrito.php';
+    // require 'clases/carrito.php';
     ?>
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
