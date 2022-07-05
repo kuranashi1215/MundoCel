@@ -1,5 +1,4 @@
 <?php
-    require '../model/config.php';
 
     if(isset($_POST['id'])){
 
