@@ -43,24 +43,24 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                                 <span class="label">New</span>  
                             </div>
                             <div class="container">
-                            <button type="button" class="btn btn-primary mt-5" data-toggle="collapse" data-target="#demo">Leer mas</button>
                             <div id="demo" class="collapse">
-                            <?php echo "tipo: "; echo $row['descripcion']; ?>
+                            <?php echo $row['descripcion']; ?>
+                            </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-5" data-toggle="collapse" data-target="#demo">Leer mas</button>
                             <br>
-                            </div>
-                            </div>
+                            
                             <a href="" class="btn btn-success" onclick="addProducto(<?php echo $id;  ?>, <?php echo $token_tmp ?>)">Agregar</a>
-                            <div class="product__item__text">
+                         
                                 <h6><?php echo $row['descripcion'] ?></h6>
                                 <!-- <a href="shopdetails" class="add-cart">Detalles</a> -->
                                 <h5><?php echo number_format($row['precio'], 2, '.', ',');?></h5>
                                 <div class="btn-group">
-                                </div>
-                            </div>   
+                                </div> 
                         </div>      
                     </div>
                 <?php }?>  
-            </div>
+            </div> 
         </div>
     </section>
     <!-- Termina Seccion Productos -->

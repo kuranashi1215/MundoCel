@@ -4,7 +4,7 @@ function validate(e) {
     user      = document.getElementById('txtUser');
     password  = document.getElementById('txtPass');
 
-
+    alert("ingrese");
     lVali = true;
 
     if (user.value==""){

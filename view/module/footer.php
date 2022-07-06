@@ -5,7 +5,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="view/img/whiteLogo.png" alt=""></a>
+                            <a href="inicio"><img src="view/img/whiteLogo.png" alt=""></a>
                         </div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, sequi!.</p>
                         <a href="#"><img src="view/img/payment.png" alt=""></a>

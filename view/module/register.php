@@ -22,8 +22,8 @@
 					<i class="login__icon fas fa-lock"></i>
 					<input type="password" class="login__input" id="txtPass" name="txtPass" placeholder="Password">
 				</div> 
-				<button class="button login__submit" type="submit">
-				<span class="button__text">Continuar</span>
+				<button class="button login__submit" type="submit" onclick="validate(event)">
+				    <span class="button__text">Continuar</span>
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>				
 			</form>
@@ -46,6 +46,6 @@
 	</div>
 </div>
 <!-- partial -->
-  
+<script src="view/js/validacion.js"></script>  
 </body>
 </html>
