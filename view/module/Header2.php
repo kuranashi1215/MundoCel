@@ -1,26 +1,10 @@
-    <!-- Cargador Pagina -->
-    <!-- <div id="preloder"> -->
-        <!-- <div class="loader"></div> -->
-    <!-- </div> -->
-
 
     <!-- Offcanvas Menu Comienza -->
-
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
             <div class="offcanvas__links">
-                <a href="view/module/login.php">Iniciar Sesion</a>
-                <?php
-                if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
-                    echo "<a href='view/module/CerrarSesion.php'>Cerrar Sesion</a>";               
-                    }else{
-                    // header_remove();
-                    echo "<a href='logeo'>Iniciar Sesion</a>";
-                    echo "<a href='register'>Register</a>";
-                    }
-                    
-                ?>
+                <a href="view/module/register.php">Cerrar Sesion</a>
             </div>
             <div class="offcanvas__top__hover">
                 <span>COL<i class="arrow_carrot-down"></i></span>
@@ -37,7 +21,6 @@
             <p>Free shipping, 30-day return or refund guarantee.</p>
         </div>
     </div>
-  
     <!-- Offcanvas Menu termina -->
 
     <!-- Header Comienza -->
@@ -53,17 +36,7 @@
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-        
-                            <?php
-                               if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
-                                echo "<a href='view/module/CerrarSesion.php'>Cerrar Sesion</a>";                    
-                                }else{
-                                    // header_remove();
-                                    echo "<a href='logeo'>Iniciar Sesion</a>";
-                                    echo "<a href='register'>Register</a>";
-                                }
-
-                            ?>
+                                <a href="cerrar">Cerrar Sesion</a>
                             </div>
                             <div class="header__top__hover">
                                 <span>COL</i></span>
@@ -83,8 +56,8 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="inicio">Inicio</a></li>
-                            <li><a href="index.php?ruta=products">Productos</a></li>
+                        <li class="active"><a href="">Inicio</a></li>
+                            <li><a href="#">Productos</a></li>
                             <li><a href="about">Acerca</a></li>
                             <li><a href="#">Categorias</a></li>
                             <li><a href="contact">Contacto</a></li>

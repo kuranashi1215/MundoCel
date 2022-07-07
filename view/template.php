@@ -15,9 +15,14 @@ if (isset($_GET['ruta'])){ //Si variable ruta existe
       include_once 'view/module/redireccionR.php';
       break;
     case 'shopdetails':
-      include_once 'view/module/shop-details.php';  
+      include_once 'view/module/shopdetails.php';
+      break;  
+    case 'inicio':
+      include_once '';
+      break; 
     case 'about':
-      include_once 'view/module/redireccionAbout.php';    
+      include_once 'view/module/about.php';
+      break;     
   }
 }else {
   require_once "view/module/hero.php";

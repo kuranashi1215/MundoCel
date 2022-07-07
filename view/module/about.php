@@ -1,9 +1,4 @@
 
-    <!-- Cargador Pagina --> 
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
 
     <!-- Breadcrumb Section Begin -->
     <section class="breadcrumb-option">
