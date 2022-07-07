@@ -1,4 +1,7 @@
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 <?php 
 
 //require 'model/conexion.php';
@@ -20,9 +23,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="filter__controls">
-                        <li class="active" data-filter="*">Mas comprados</li>
                         <li data-filter=".new-arrivals">Contenido nuevo</li>
-                        <li data-filter=".hot-sales">Ventas ardientes</li>
                     </ul>
                 </div>
             </div>
@@ -41,18 +42,25 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <div class="product__item__pic set-bg" data-setbg="<?php echo $imagen;?>">
                                 <span class="label">New</span>  
                             </div>
-                            <a href="view/module/shopdetails.php?id=<?php echo $row['id']; ?>&token=<?php echo hash_hmac('sha1',$row['id'], KEY_TOKEN); ?>">detalles</a>
-                            <div class="product__item__text">
+                            <div class="container">
+                            <div id="demo" class="collapse">
+                            <?php echo $row['descripcion']; ?>
+                            </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-5" data-toggle="collapse" data-target="#demo">Leer mas</button>
+                            <br>
+                            
+                            <a href="" class="btn btn-success" onclick="addProducto(<?php echo $id;  ?>, <?php echo $token_tmp ?>)">Agregar</a>
+                         
                                 <h6><?php echo $row['descripcion'] ?></h6>
                                 <!-- <a href="shopdetails" class="add-cart">Detalles</a> -->
                                 <h5><?php echo number_format($row['precio'], 2, '.', ',');?></h5>
                                 <div class="btn-group">
-                                </div>
-                            </div>   
+                                </div> 
                         </div>      
                     </div>
                 <?php }?>  
-            </div>
+            </div> 
         </div>
     </section>
     <!-- Termina Seccion Productos -->

@@ -21,7 +21,7 @@ $sql->execute([$id]);
 if($sql->fetchColumn() > 0) {
 
 
-$sql = $con->prepare("SELECT nombre, descripcion, precio, descuento FROM productos WHERE id=? AND activo=1");
+  $sql = $con->prepare("SELECT nombre, descripcion, precio, descuento FROM productos WHERE id=? AND activo=1");
 $sql->execute([$id]);
 $row = $sql->fetch(PDO::FETCH_ASSOC);
 $nombre = $row ['nombre'];
@@ -29,12 +29,12 @@ $precio = $row ['precio'];
 $descripcion = $row ['descripcion'];
 $descuento = $row ['descuento'];
 $precio_desc = $precio - (($precio*$descuento)/100);
-$dir_images = 'img/productos/'. $id .'/';
+$dir_images = 'images/productos/'. $id .'/';
 
 $rutaimg = $dir_images . 'r.jpg';
 
 if(!file_exists($rutaimg)){
-  $rutaimg = 'img/no.jpg';
+  $rutaimg = 'images/no-photo.jpg';
 }
 
 $imagenes = array();
@@ -71,7 +71,7 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
       <div id="carouselimages" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="<?php echo $rutaimg ;?>" alt="https://www.youtube.com/watch?v=aI7I0iFpfm4ge" height="500" width="500" class="d-block w-100">
+      <img src="<?php echo $rutaimg ;?>" alt="image" height="500" width="500" class="d-block w-100">
     </div>
     <?php foreach($imagenes as $img) { ?>
     <div class="carousel-item">
@@ -125,16 +125,16 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
 </main>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-    crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
+crossorigin="anonymous">
 </script>
 <script>
   function addProducto(id, token){
     let url = 'clases/carrito.php'
     let formData = new FormData()
-    formData.append('id', $id)
-    formData.append('token', $token)
+    formData.append('id', id)
+    formData.append('token', token)
 
     fetch(url,{
       method: 'POST',

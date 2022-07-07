@@ -5,7 +5,10 @@
 
 
     <!-- Offcanvas Menu Comienza -->
-
+    <?php
+    require 'controller/carrito.controller.php';
+    require 'clases/carrito.php';
+    ?>
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
         <div class="offcanvas__option">
@@ -27,14 +30,14 @@
             </div>
         </div>
         <div class="offcanvas__nav__option">
-            <a href="#" class="search-switch"><img src="logo.png" alt=""></a>
-            <a href="#"><img src="../img/icon/heart.png" alt=""></a>
+            <a href="index.php" class="search-switch"><img src="../img/logo1.png" alt=""></a>
+            <a href="#"><img src="img/icon/heart.png" alt=""></a>
             <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
-            <div class="price">$0.00</div>
+            <div class="price">Carrito</div>
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__text">
-            <p>Free shipping, 30-day return or refund guarantee.</p>
+            <p></p>
         </div>
     </div>
   
@@ -46,9 +49,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-7">
-                        <div class="header__top__left">
-                            <p>El mundo en tu celu</p>
-                        </div>
+
                     </div>
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
@@ -77,7 +78,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="view/img/logo1.png" alt=""></a>
+                        <a href="inicio"><img src="view/img/logo1.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -95,8 +96,9 @@
                     <div class="header__nav__option">
                         <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
                         <a href="#"><img src="img/icon/heart.png" alt=""></a>
-                        <a href="shopping-cart.html"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
-                        <div class="price">$0.00</div>
+                    <a href="../../clases/carrito.php" class="btn btn-primary">Carrito<span id="num_cart" class="badge bg-secondary"><?php echo $num_cart; ?></span>
+                    </a>
+                        <div class="price"></div>
                     </div>
                 </div>
             </div>
