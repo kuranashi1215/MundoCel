@@ -19,11 +19,7 @@ $con = $db ->conectar();
 
 
 
-<<<<<<< HEAD
-=======
 
-
->>>>>>> pimbo
 $sql = $con->prepare("SELECT id,nombre, precio, descripcion  FROM productoS WHERE activo=1");
 $sql->execute();
 $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
@@ -63,10 +59,8 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             <button type="button" class="btn btn-primary mt-5" data-toggle="collapse" data-target="#demo">Leer mas</button>
                             <br>
                             
-<<<<<<< HEAD
                             <a href="" class="btn btn-success" onclick="addProducto(<?php echo $id;  ?>, <?php echo $token_tmp ?>)">Agregar</a>
-                         
-=======
+
                             <?php if (productoYaEstaEnCarrito($producto->id)) { ?>
                         <form action="funciones/eliminar_del_carrito.php" method="post">
                             <input type="hidden" name="id_producto" value="<?php echo $producto->id ?>">
@@ -85,7 +79,6 @@ $resultado = $sql->fetchAll(PDO::FETCH_ASSOC);
                             </button>
                         </form>
                     <?php } ?>
->>>>>>> pimbo
                                 <h6><?php echo $row['descripcion'] ?></h6>
                                 <!-- <a href="shopdetails" class="add-cart">Detalles</a> -->
                                 <h5><?php echo number_format($row['precio'], 2, '.', ',');?></h5>
