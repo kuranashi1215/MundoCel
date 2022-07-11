@@ -37,5 +37,5 @@ quitarProductoDelCarrito($_POST["id_producto"]);
 if (isset($_POST["redireccionar_carrito"])) {
     header("location:  ../index.php?ruta=carrito");
 } else {
-    header("location: ../index.php");
+    header("location: ../productos");
 }

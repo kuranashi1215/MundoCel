@@ -1,6 +1,4 @@
 <?php
-// require '../../model/config.php';
-// require '../../model/conexion.php';
 require 'model/conexion.php';
 $db = new Database();
 $con = $db->conectar();
