@@ -10,7 +10,7 @@
                             </div>
                             <div class="banner__item__text">
                                 <h2>Celulares</h2>
-                                <a href="#">Comprar ahora</a>
+                                <a href="productos">Ver mas</a>
                             </div>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                             </div>
                             <div class="banner__item__text">
                                 <h2>Multimedia</h2>
-                                <a href="#">Comprar ahora</a>
+                                <a href="productos">Ver mas</a>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                             </div>
                             <div class="banner__item__text">
                                 <h2>Accesorios</h2>
-                                <a href="#">Comprar ahora</a>
+                                <a href="productos">Ver mas</a>
                             </div>
                         </div>
                     </div>

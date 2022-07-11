@@ -83,7 +83,7 @@
                     <nav class="header__menu mobile-menu">
                         <ul>
                             <li class="active"><a href="inicio">Inicio</a></li>
-                            <li><a href="index.php?ruta=products">Productos</a></li>
+                            <li><a href="productos">Productos</a></li>
                             <li><a href="about">Acerca</a></li>
                             <li><a href="#">Categorias</a></li>
                             <li><a href="contact">Contacto</a></li>
