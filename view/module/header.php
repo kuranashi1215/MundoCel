@@ -1,17 +1,11 @@
     <!-- Cargador Pagina -->
     <!-- <div id="preloder"> -->
-        <!-- <div class="loader"></div> -->
+    <!-- <div class="loader"></div> -->
     <!-- </div> -->
-
-
     <!-- Offcanvas Menu Comienza -->
     <?php
-
-    require 'controller/carrito.controller.php';
-    require 'clases/carrito.php';
-
-
-
+    // require 'controller/carrito.controller.php';
+    // require 'clases/carrito.php';
     ?>
     <div class="offcanvas-menu-overlay"></div>
     <div class="offcanvas-menu-wrapper">
@@ -100,11 +94,6 @@
                     <div class="header__nav__option">
                         <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
                         <a href="#"><img src="img/icon/heart.png" alt=""></a>
-
-                    <a href="../../clases/carrito.php" class="btn btn-primary">Carrito<span id="num_cart" class="badge bg-secondary"><?php echo $num_cart; ?></span>
-                    </a>
-
-                    
                         <a href="carrito" class="button is-success">
                             <strong>Ver carrito <?php
                                                 include_once "funciones/funciones.php";
@@ -114,10 +103,6 @@
                                                 }
                                                 ?>&nbsp;<i class="fa fa-shopping-cart"></i></strong>
                         </a>
-
-
-
-
                         <div class="price"></div>
                     </div>
                 </div>

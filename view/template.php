@@ -26,7 +26,10 @@ if (isset($_GET['ruta'])){ //Si variable ruta existe
       break;     
     case 'carrito':
       include_once 'view/module/ver_carrito.php';
-      break;     
+      break;
+    case 'admin':
+      include_once 'view/module/vendor/header.php';
+      break;       
   }
 }else {
   include_once 'arranque.php';

@@ -5,20 +5,19 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="instagram__pic">
-                        <div class="instagram__pic__item set-bg" data-setbg="view/img/instagram-1.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="view/img/instagram-2.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="view/img/instagram-3.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="view/img/instagram-4.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="view/img/instagram-5.jpg"></div>
-                        <div class="instagram__pic__item set-bg" data-setbg="view/img/instagram-6.jpg"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="view/img/celulares1.png"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="view/img/celulares-2.jpg"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="view/img/celulares-3.jpg"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="view/img/celulares-4.jpg"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="view/img/celulares-5.jpeg"></div>
+                        <div class="instagram__pic__item set-bg" data-setbg="view/img/celulares-5.jpg"></div>
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="instagram__text">
                         <h2>Instagram</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                        <a href="https://github.com/"><h3>#MundoCel</h3></a>
+                        <p>Visitanos en nuestro instagram para ver nuestros productos nuevos y actualizados :)</p>
+                        <a href="https://www.instagram.com/mundocell_elcampeon/"><h3>#MundoCel</h3></a>
                     </div>
                 </div>
             </div>

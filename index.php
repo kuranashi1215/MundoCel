@@ -18,6 +18,7 @@
     //                 CONEXION                //
     /////////////////////////////////////////////
     require_once 'model/conexion.php';
+    require 'model/config.php';
     
     /////////////////////////////////////////////
     //                  LIBRARYS               //
