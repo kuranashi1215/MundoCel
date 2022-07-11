@@ -14,6 +14,8 @@
     rel="stylesheet">
 
     <!-- Css -->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="view/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="view/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="view/css/elegant-icons.css" type="text/css">
