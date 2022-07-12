@@ -25,11 +25,9 @@
 				<button class="button login__submit" value="Log in">
 					<span class="button__text">Iniciar Sesion</span>
 					<i class="button__icon fas fa-chevron-right"></i>
-				</button>				
-				<button class="button login__submit">
-					<span class="button__text">Registrarse</span>
-					<i class="button__icon fas fa-chevron-right"></i>
-				</button>				
+				</button>
+				<br>								
+				<center><a href="register">No tienes cuenta?, Registrate!</a></center>
 			</form>
 			<?php
                 if (isset($_POST['txtUser'])){

@@ -6,9 +6,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb__text">
-                        <h4>Sobre Nosotros</h4>
+                        <h4>MundoCel</h4>
                         <div class="breadcrumb__links">
-                            <a href="./index.html">Inicio</a>
+                            <a href="inicio">Inicio</a>
                             <span>Sobre Nosotros</span>
                         </div>
                     </div>
@@ -32,19 +32,19 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="about__item">
                         <h4>Quienes Somos?</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit asperiores ullam aspernatur voluptas doloremque perferendis.</p>
+                        <p>Somos una empresa dedicada a la tecnologia y al buen uso de esta, comprometida a dar un buen servicio para toso nuestros clientes.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="about__item">
                         <h4>Que hacemos?</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ipsum nulla veritatis porro eligendi sapiente excepturi!</p>
+                        <p>Vendemos la gran mayoria de tecnologia ya sea, multimedia, accesorios o celulares, tambien en nuestra tienda fisica tenemos tecnicos que nos ayudan a resolver los problemas tecnicos de nuestros clientes.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="about__item">
                         <h4>Porque Escogernos</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, nostrum adipisci fuga doloremque neque ducimus in mollitia cupiditate provident placeat?</p>
+                        <p>Porque somos una microempresa, con diferentes puntos fisicos al rededor de cartagena, asi dandote la comidad de encontrarnos en tu punto mas cercano. Somos un equipo dedicado y amamos lo que hacemos, para asi promover la buena atencion a los clientes.</p>
                     </div>
                 </div>
             </div>
@@ -59,12 +59,11 @@
                 <div class="col-lg-6 p-0">
                     <div class="testimonial__text">
                         <span class="icon_quotations"></span>
-                        <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero magni excepturi vel quo, officia sapiente obcaecati corrupti quasi numquam itaque impedit rerum nemo maxime minus, vitae nisi.”
+                        <p>“Una de las cosas que siempre he querido es dar todo lo que tengo y puedo, ser conocido como alguien que ayuda siempre a los demas, y que siempre esta pendiente de sus trabajadores.”
                         </p>
                         <div class="testimonial__author">
                             <div class="testimonial__author__text">
-                                <h5>Persona1</h5>
-                                <p>CargoPersona</p>
+                                <h5>Lider</h5>
                             </div>
                         </div>
                     </div>
@@ -132,28 +131,28 @@
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                    <a href="#" class="client__item"><img src="img/clients/client-1.png" alt=""></a>
+                    <a class="client__item"><img src="view/img/clients/client-1.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                    <a href="#" class="client__item"><img src="img/clients/client-2.png" alt=""></a>
+                    <a class="client__item"><img src="view/img/clients/client-2.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                    <a href="#" class="client__item"><img src="img/clients/client-3.png" alt=""></a>
+                    <a class="client__item"><img src="view/img/clients/client-3.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                    <a href="#" class="client__item"><img src="img/clients/client-4.png" alt=""></a>
+                    <a class="client__item"><img src="view/img/clients/client-4.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                    <a href="#" class="client__item"><img src="img/clients/client-5.png" alt=""></a>
+                    <a class="client__item"><img src="view/img/clients/client-5.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                    <a href="#" class="client__item"><img src="img/clients/client-6.png" alt=""></a>
+                    <a class="client__item"><img src="view/img/clients/client-6.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                    <a href="#" class="client__item"><img src="img/clients/client-7.png" alt=""></a>
+                    <a class="client__item"><img src="view/img/clients/client-7.png" alt=""></a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-4 col-6">
-                    <a href="#" class="client__item"><img src="img/clients/client-8.png" alt=""></a>
+                    <a class="client__item"><img src="view/img/clients/client-8.png" alt=""></a>
                 </div>
             </div>
         </div>

@@ -16,12 +16,12 @@
                         <div class="section-title">
                             <span>Informacion</span>
                             <h2>Contactanos</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti veniam sequi quibusdam, modi distinctio velit culpa in ullam corporis adipisci, enim quas quos amet, quidem accusantium aut eaque. Quae, temporibus!</p>
+                            <p>Aqui puedes contactarnos para cualquier duda que tengan sobre nuestra empresa, ya sea de ubicacion o cualquier cosa que necesiten :)</p>
                         </div>
                         <ul>
                             <li>
                                 <h4>Cartagena</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat sapiente assumenda earum fugit iste dicta distinctio et recusandae! Ratione, id officiis maxime accusantium eum maiores ipsa animi ad neque excepturi! <br />+57 3004824495</p>
+                                <p>Estamos ubicados en cartagena, para mayor informacion de la ubicacion puedes enviarme un WhastApp al siguiente numero o llamame ;)<br />+57 3004824495</p>
                             </li>
                         </ul>
                     </div>
