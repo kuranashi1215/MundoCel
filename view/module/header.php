@@ -14,7 +14,7 @@
                 <a href="view/module/login.php">Iniciar Sesion</a>
                 <?php
                 if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
-                    echo "<a href='view/module/CerrarSesion.php'>Cerrar Sesion</a>";               
+                    echo "<a href='logout'>Cerrar Sesion</a>";               
                     }else{
                     // header_remove();
                     echo "<a href='logeo'>Iniciar Sesion</a>";
@@ -54,10 +54,12 @@
                             <div class="header__top__links">
         
                             <?php
+                               if (isset($_SESSION['admin']) and $_SESSION['admin'] == true){
+                                
+                               } 
                                if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
-                                echo "<a href='view/module/CerrarSesion.php'>Cerrar Sesion</a>";                    
+                                echo "<a href='cerrar'>Cerrar Sesion</a>";                    
                                 }else{
-                                    // header_remove();
                                     echo "<a href='logeo'>Iniciar Sesion</a>";
                                     echo "<a href='register'>Register</a>";
                                 }

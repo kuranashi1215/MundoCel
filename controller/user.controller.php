@@ -17,7 +17,7 @@ class UserController{
                 $_SESSION['login'] = true;
                 header('location: index.php');
             }
-
+            
         } catch(Exception $e){
             echo "Error on the creation of the controller";
         }
