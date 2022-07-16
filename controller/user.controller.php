@@ -31,7 +31,6 @@ class UserController{
             $objDaoUser = new UserModel($objDtoUser);
 
             if ($objDaoUser -> mldInsertUsuario()){
-                echo "se ha insertado";
             }
 
         } catch(Exception $e){
