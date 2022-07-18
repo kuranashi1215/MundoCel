@@ -64,6 +64,7 @@
 						</div>
 						<div class="col-xs-6">
 							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Añadir usuario</span></a>
+							<a href="pdfusuarios.php" class="btn" ><i c></i> <span>Reporte</span></a>
 						</div>
 					</div>
 				</div>
