@@ -1,6 +1,4 @@
 <?php
-    //require_once "../model/conexion.php";
-    // require_once 'model/dto/user.dto.php';
 
     class UserModel{
         private $code;
