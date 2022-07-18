@@ -27,7 +27,6 @@
 					<i class="button__icon fas fa-chevron-right"></i>
 				</button>
 				<br>								
-				<center><a href="register">No tienes cuenta?, Registrate!</a></center>
 			</form>
 			<?php
                 if (isset($_POST['txtUser'])){

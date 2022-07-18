@@ -1,14 +1,17 @@
 <?php
+
+// SE INICIA LA SESION
+
 session_start();
-$num_cart = 0;
-if(isset($_SESSION['carrito']['productos'])){
-    $num_cart = count($_SESSION['carrito']['productos']);
-}
+
+// CREACION DE LA CLASE TEMPLATE
+
 class Template{
 
     public function getIntro(){
   
-
+        // SI LA SESSION LOGIN ES = TRUE LLEVEME A LA VISTA PRINCIPAL
+        // EN DONDE SE CAMBIARA EN LA SECCION DEL HEADER EL BOTON DE CERRAR SESION
        
         if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
             require_once "view/template.php";
@@ -20,7 +23,6 @@ class Template{
             require_once "view/template.php";
         }
            
-
     }
 
 }

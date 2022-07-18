@@ -31,7 +31,8 @@ class UserController{
             $objDaoUser = new UserModel($objDtoUser);
 
             if ($objDaoUser -> mldInsertUsuario()){
-                echo "se ha insertado";
+                $_SESSION['login'] = true;
+                header('location: index.php');
             }
 
         } catch(Exception $e){
@@ -54,7 +55,5 @@ class UserController{
 
 }// END CLASS
 
-//$objCtr = new UserController();
-//$objCtr -> getVerifyPass('abrazo','150');
 
 ?>

@@ -35,13 +35,9 @@
                 </div>
                 <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
                     <div class="footer__widget">
-                        <h6>Lorem, ipsum.</h6>
+                        <h6>MundoCel</h6>
                         <div class="footer__newslatter">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ullam.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Your email">
-                                <button type="submit"><span class="icon_mail_alt"></span></button>
-                            </form>
+                            <p>Una vida con buena tecnologia ;).</p>
                         </div>
                     </div>
                 </div>

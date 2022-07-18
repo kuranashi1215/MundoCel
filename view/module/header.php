@@ -84,7 +84,7 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="inicio">Inicio</a></li>
+                            <li><a href="inicio">Inicio</a></li>
                             <li><a href="productos">Productos</a></li>
                             <li><a href="about">Acerca</a></li>
                             <li><a href="categoria">Categorias</a></li>

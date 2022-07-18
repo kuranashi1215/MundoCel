@@ -1,4 +1,5 @@
 <?php
+// CONECTA LA DB Y EXTRAE EL CAMPO ID DE LA TABLA PRODUCTOS
 require 'model/conexion.php';
 $db = new Database();
 $con = $db->conectar();
