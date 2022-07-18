@@ -1,5 +1,5 @@
 <?php
-
+$mysqli = new mysqli("localhost","root","","flexacolor");
 class Database {
 
     private $hostname = "localhost";
