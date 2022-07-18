@@ -1,4 +1,5 @@
 <?php
+include_once 'navbar.php';
 include 'modelo/conexion.php';
 $id = $_GET["id"];
 $sql = $conexion->query(" select * from productos where id = $id ");
@@ -31,7 +32,8 @@ $sql = $conexion->query(" select * from productos where id = $id ");
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Descripcion</label>
-                <input type="text" class="form-control" name="descripcion" value="<?= $datos->descripcion?>">
+                <textarea class="form-control" style="height: 100px" name="descripcion"><?= $datos->descripcion?></textarea>
+          
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">precio</label>
@@ -42,8 +44,8 @@ $sql = $conexion->query(" select * from productos where id = $id ");
                 <input type="number" class="form-control" name="descuento" value="<?= $datos->descuento?>">
             </div>
             <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">categoria</label>
-                <input type="number" class="form-control" name="categoria" value="<?= $datos->categoria?>">
+                <label for="floatingTextarea2" class="form-label">categoria</label>
+                <input type="text" class="form-control" name="categoria" value="<?= $datos->id_categoria?>">
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">color</label>
