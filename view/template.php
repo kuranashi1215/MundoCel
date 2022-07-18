@@ -36,6 +36,9 @@ if (isset($_GET['ruta'])){ //Si variable ruta existe
     case 'cerrar':
       include_once 'view/module/cerrarsesion.php';
       break;  
+    case 'coso':
+      include_once 'view/module/coso.php';
+      break;  
   }
 }else {
   include_once 'arranque.php';

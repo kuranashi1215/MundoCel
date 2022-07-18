@@ -1,5 +1,5 @@
 <?php
-//include_once "funciones.php";
+$productos = obtenerProductos();
 $productos = obtenerProductosEnCarrito();
 if (count($productos) <= 0) {
 ?>
@@ -23,6 +23,7 @@ if (count($productos) <= 0) {
             <table class="table">
                 <thead>
                     <tr>
+                        <th>Imagen</th>
                         <th>Nombre</th>
                         <th>Descripción</th>
                         <th>Precio</th>
@@ -36,6 +37,16 @@ if (count($productos) <= 0) {
                         $total += $producto->precio;
                     ?>
                         <tr>
+                            <td> <?php
+                                    $imagen = "view/img/productos/" . $producto->id . "/product.jpg";
+                                    if (!file_exists($imagen)) {
+                                        $imagen = "view/img/no.jpg";
+                                    }
+
+                                    ?>
+                                <br>
+                                <img src="<?php echo $imagen; ?>" width="150" height="150" alt="">
+                            </td>
                             <td><?php echo $producto->nombre ?></td>
                             <td><?php echo $producto->descripcion ?></td>
                             <td>$<?php echo number_format($producto->precio, 2) ?></td>
@@ -60,7 +71,7 @@ if (count($productos) <= 0) {
                     </tr>
                 </tfoot>
             </table>
-            <a href="funciones/terminar_compra.php" class="button is-success is-large"><i class="fa fa-check"></i>&nbsp;Terminar compra</a>
+            <?php require_once "funciones/pago.php"  ?>
         </div>
     </div>
 <?php } ?>
