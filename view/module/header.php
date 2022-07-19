@@ -54,9 +54,6 @@
                             <div class="header__top__links">
         
                             <?php
-                               if (isset($_SESSION['admin']) and $_SESSION['admin'] == true){
-                                
-                               } 
                                if (isset($_SESSION['login']) and $_SESSION['login'] == true ){
                                 echo "<a href='cerrar'>Cerrar Sesion</a>";                    
                                 }else{
