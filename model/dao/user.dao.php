@@ -41,34 +41,5 @@
             }
             return $estado;
         }
-        public function mldSearchAllUser(){
-            $respon=false;
-            $sql  = "call spSearchAllUser()";
-            try {
-                $objCon = new Conexion();
-                $stmt = $objCon->getConect() -> prepare($sql);
-                $stmt -> execute();
-                $respon = $stmt;
-            } catch (PDOException $e) {
-                echo "Ha ocurrido un error al 
-                mostrar los datos en el dao " . $e -> getMessage() ;
-            }//end try-catch
-            return $respon;
-        }//END SEARCHALLUSER
-        public function mldEraseUser(){
-            $respon = false;
-            $sql  = "call spDeleteUser( ? )";
-            try {
-                $objCon = new Conexion();
-                $stmt = $objCon->getConect() -> prepare($sql);
-                $stmt ->  bindParam(1,  $this -> code,      PDO::PARAM_INT);
-                $stmt -> execute();
-                $respon = true;
-            } catch (PDOException $e) {
-                echo "Ha ocurrido un error al 
-                mostrar los datos en el dao " . $e -> getMessage() ;
-            }//end try-catch
-            return $respon;
-        }
 }//END CLASS
 ?>

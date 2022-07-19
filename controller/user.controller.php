@@ -1,6 +1,7 @@
 <?php
 class UserController{
-    
+    // Se crea un getVerifyPass para user y password en donde se extrae y se verifica la informacion del usuario
+
     public function getVerifyPass($user, $pass){
 
         try{
@@ -40,18 +41,6 @@ class UserController{
         }
 
     }// FIN DEL CONTROLADOR DE INSERCION
-    public function getSearchAllUser(){
-        $respon = false;
-        try {
-            $objDtoUser = new User();
-            $objDaoUser = new UserModel($objDtoUser);
-            $respon = $objDaoUser -> mldSearchAllUser()->fetchAll();
-        } catch (PDOException $e) {
-            echo "Error on the creation of the 
-            controller of show all " . $e->getMessage();
-        }
-        return $respon;
-    }//FIN DE MOSTRAR TODOS
 
 }// END CLASS
 

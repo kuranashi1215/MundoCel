@@ -7,7 +7,7 @@
                         <div class="footer__logo">
                             <a href="inicio"><img src="view/img/whiteLogo.png" alt=""></a>
                         </div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, sequi!.</p>
+                        
                         <a href="#"><img src="view/img/payment.png" alt=""></a>
                     </div>
                 </div>
@@ -15,7 +15,7 @@
                     <div class="footer__widget">
                         <h6>Shopping</h6>
                         <ul>
-                            <li><a href="#">Productos</a></li>
+                            <li><a href="productos">Productos</a></li>
                             <li><a href="#">Mas vendidos</a></li>
                             <li><a href="#">Multimedia</a></li>
                             <li><a href="#">Accesorios</a></li>
