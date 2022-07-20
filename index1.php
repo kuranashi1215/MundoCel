@@ -14,10 +14,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<?php
-		include "modelo/conexion.php";
-		include 'controller/eliminar.php';
-		include 'controller/registro-usuarios.php';
-		?>
+	include "modelo/conexion.php";
+	include 'controller/eliminar.php';
+	include 'controller/registro-usuarios.php';
+	?>
 	<link rel="stylesheet" href="style.css">
 	<script>
 		function eliminar() {
@@ -52,7 +52,7 @@
 </head>
 
 <body>
-	
+
 
 	<div class="container">
 		<div class="table-responsive">
@@ -81,17 +81,16 @@
 
 						$sql = $conexion->query("select * from user ");
 						while ($datos = $sql->fetch_object()) { ?>
+						
 							<tr>
 								<td><?= $datos->CODE ?></td>
 								<td><?= $datos->USER ?></td>
-								<td><?= $datos->PASSWORD ?></td>
+								<td><?=  password_hash($datos->PASSWORD , PASSWORD_DEFAULT) ?></td>
 								<td>
 									<a href="vistamodificar.php?id=<?= $datos->CODE ?>" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-									
+
 									<a onclick="return eliminar() 
-									"href="index.php?id=<?= $datos->CODE?>" 
-									class="delete" 
-									data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+									" href="index.php?id=<?= $datos->CODE ?>" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
 								</td>
 							</tr>
 						<?php } ?>
@@ -170,7 +169,7 @@
 						<h4 class="modal-title">Delete Employee</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					</div>
-				
+
 					<div class="modal-body">
 						<p>Are you sure you want to delete these Records?</p>
 						<p class="text-warning"><small>This action cannot be undone.</small></p>
