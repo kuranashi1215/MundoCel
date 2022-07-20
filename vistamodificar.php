@@ -32,7 +32,7 @@ $sql = $conexion->query(" select * from user where CODE = $id ");
             </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Contraseña</label>
-                <input type="text" class="form-control" name="contraseña" value="<?= $datos->PASSWORD?>">
+                <input type="password" class="form-control" name="contraseña" value="<?= $datos->PASSWORD?>">
             </div>
             <button type="submit" class="btn btn-primary" name="btnmodificar" value="ok">Modificar</button>
             <a href="index.php">Ir al inicio</a>
