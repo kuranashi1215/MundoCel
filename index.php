@@ -31,7 +31,6 @@
     require_once 'model/dto/user.dto.php';
     require_once 'model/ModelProductos.php';
     
-    
     /////////////////////////////////////////////
     //                 CONEXION                //
     /////////////////////////////////////////////
@@ -39,19 +38,13 @@
     require 'model/config.php';
     
     /////////////////////////////////////////////
-    //                  LIBRARYS               //
-    /////////////////////////////////////////////
-    
-    
-    
-    /////////////////////////////////////////////
-    //          funciones carrito              //
+    //           FUNCIONES CARRITO             //
     /////////////////////////////////////////////
     require_once 'funciones/funciones.php';
     
-
     /////////////////////////////////////////////
-                    /* run */
+    //                    RUN                  //
+    /////////////////////////////////////////////
     $objRun = new Template();
     $objRun->getIntro();
     
