@@ -64,7 +64,7 @@
 						</div>
 						<div class="col-xs-6">
 							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Añadir usuario</span></a>
-							<a href="pdfusuarios.php" class="btn" ><i c></i> <span>Reporte</span></a>
+							<a href="pdfusuarios.php" class="btn"><i c></i> <span>Reporte</span></a>
 						</div>
 					</div>
 				</div>
@@ -82,13 +82,13 @@
 
 						$sql = $conexion->query("select * from user ");
 						while ($datos = $sql->fetch_object()) { ?>
-						
+
 							<tr>
 								<td><?= $datos->CODE ?></td>
 								<td><?= $datos->USER ?></td>
-								<td><?=  password_hash($datos->PASSWORD , PASSWORD_DEFAULT) ?></td>
+								<td><?= password_hash($datos->PASSWORD, PASSWORD_DEFAULT) ?></td>
 								<td>
-									<a href="vistamodificar.php?id=<?= $datos->CODE ?>" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+									<a href="index.php?ruta=modificar&id=<?= $datos->CODE ?>" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 
 									<a onclick="return eliminar() 
 									" href="index.php?id=<?= $datos->CODE ?>" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
@@ -185,5 +185,6 @@
 		</div>
 	</div>
 </body>
+<!-- <script src="assets/plugins/sweetalert/dist/sweetalert2.all.min.js"></script> -->
 
 </html>

@@ -14,6 +14,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <?php
+    include_once 'navbar.php';
     include "modelo/conexion.php";
     include 'controller/eliminar-producto.php';
     include 'controller/registro-productos.php';
@@ -101,13 +102,12 @@
                                 <td><?= $datos->medidas ?></td>
                                 <td><?= $datos->cantidad ?></td>
                                 <td><?= $datos->activo ?></td>
-                                <td>
+                                
 
 
+                                    <a href="index.php?ruta=modificarp&id=<?= $datos->id ?>" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
 
-                                    <a href="vistamodificarproducto.php?id=<?= $datos->id ?>" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
-
-                                    <a onclick="return eliminar()" href="productos.php?id=<?= $datos->id ?>" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                    <a onclick="return eliminar()" href="index.php?ruta=productos&id=<?= $datos->id ?>" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                                 </td>
                             </tr>
 
