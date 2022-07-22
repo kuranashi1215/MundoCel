@@ -18,6 +18,12 @@ if (isset($_GET['ruta'])) { //Si variable ruta existe
     case 'modificarp':
       include_once 'vistamodificarproducto.php';
       break;
+/*     case 'pdfuser':
+      include_once 'view/module/pdfusuarios.php';
+      break;
+    case 'pdfproduct':
+      include_once 'view/module/pdfproductos.php';
+      break; */
    
   }
 } else {

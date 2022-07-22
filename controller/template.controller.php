@@ -3,7 +3,7 @@
 class Template  
 {
     public function getIntro(){
-        require_once "template.php";
+        require_once "view/module/template.php";
     }
 }
 

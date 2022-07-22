@@ -1,14 +1,13 @@
 <?php
-require 'fpdf/fpdf.php';
-
+require '../../fpdf/fpdf.php';
 class PDF extends FPDF
 {
 // Cabecera de página
 function Header()
 {
     // Logo
-    $this->Image('logo1.png',170,5,30);
-    $this->Image('logo.png',10,20,50);
+    $this->Image('../../view/img/logo1.png',170,5,30);
+    $this->Image('../../view/img/logo.png',10,20,50);
     $this->Ln(20);
     // $this->Image('../img/images/logo.jpg',10,8,33);
     // Arial bold 15
@@ -50,7 +49,7 @@ function ChapterBody($file)
     $this->Cell(0,5,'(fin del extracto)');
 }
 }
-require 'modelo/conexion.php';
+require '../../modelo/conexion.php';
 $consulta = "SELECT * FROM user";
 $resultado =$conexion->query($consulta);
 

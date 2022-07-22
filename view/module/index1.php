@@ -8,17 +8,18 @@
 	<title>MundoCelAdmin
 	</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	<?php
 	include "modelo/conexion.php";
 	include 'controller/eliminar.php';
 	include 'controller/registro-usuarios.php';
 	?>
-	<link rel="stylesheet" href="style.css">
+<!-- 	<link rel="stylesheet" href="style.css"> -->
 	<script>
 		function eliminar() {
 			var respuesta = confirm("estas seguro?");
@@ -64,7 +65,7 @@
 						</div>
 						<div class="col-xs-6">
 							<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Añadir usuario</span></a>
-							<a href="pdfusuarios.php" class="btn"><i c></i> <span>Reporte</span></a>
+							<a href="view/module/pdfusuarios.php" class="btn"><i c></i> <span>Reporte</span></a>
 						</div>
 					</div>
 				</div>

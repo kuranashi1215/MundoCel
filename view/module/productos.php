@@ -19,7 +19,7 @@
     include 'controller/eliminar-producto.php';
     include 'controller/registro-productos.php';
     ?>
-    <link rel="stylesheet" href="style.css">
+
     <script>
         function eliminar() {
             var respuesta = confirm("estas seguro?");
@@ -65,7 +65,7 @@
                         </div>
                         <div class="col-xs-6">
                             <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Añadir producto</span></a>
-                            <a href="pdfproductos.php" class="btn" ><i c></i> <span>Reporte</span></a>
+                            <a href="view/module/pdfproductos.php" class="btn" ><i c></i> <span>Reporte</span></a>
                         </div>
                     </div>
                 </div>
@@ -102,7 +102,8 @@
                                 <td><?= $datos->medidas ?></td>
                                 <td><?= $datos->cantidad ?></td>
                                 <td><?= $datos->activo ?></td>
-                                
+                                <td>
+
 
 
                                     <a href="index.php?ruta=modificarp&id=<?= $datos->id ?>" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
